@@ -1,3 +1,4 @@
+import sys
 import argparse
 
 def count_bytes(file_content):
