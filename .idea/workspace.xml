@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1cc5d2-cdb8-47a2-9503-84735ef98cad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Unix wc tool.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wc.py" afterDir="false" />
+    <list default="true" id="bb1cc5d2-cdb8-47a2-9503-84735ef98cad" name="Changes" comment="count bytes">
+      <change beforePath="$PROJECT_DIR$/wc.py" beforeDir="false" afterPath="$PROJECT_DIR$/wc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +20,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Prakhar Verma &lt;connect@iprakharv.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "iPrakharV"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/iPrakharV/Unix-wc-tool.git",
+    "accountId": "d85ad034-dfc2-4e89-8ee8-a548cd05fc71"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -66,8 +81,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729529443127</updated>
-      <workItem from="1729529446242" duration="457000" />
+      <workItem from="1729529446242" duration="1451000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial project">
+      <option name="closed" value="true" />
+      <created>1729529914826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729529914826</updated>
+    </task>
+    <task id="LOCAL-00002" summary="count bytes">
+      <option name="closed" value="true" />
+      <created>1729530122661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729530122661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +115,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial project" />
+    <MESSAGE value="count bytes" />
+    <option name="LAST_COMMIT_MESSAGE" value="count bytes" />
   </component>
 </project>
