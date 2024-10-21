@@ -14,25 +14,34 @@ def count_characters(file_content):
 
 def main():
     parser = argparse.ArgumentParser(description='Custom wc tool in Python')
-    parser.add_argument('-c', action='store_true', help='Count bytes')
-    parser.add_argument('-l', action='store_true', help='Count lines')
-    parser.add_argument('-w', action='store_true', help='Count words')
-    parser.add_argument('-m', action='store_true', help='Count characters')
-    parser.add_argument('file', help='File to process')
+    parser.add_argument('-c', '--bytes', action='store_true', help='Count bytes')
+    parser.add_argument('-l', '--lines', action='store_true', help='Count lines')
+    parser.add_argument('-w', '--words', action='store_true', help='Count words')
+    parser.add_argument('-m', '--chars', action='store_true', help='Count characters')
+    parser.add_argument('file', nargs='?', help='File to process')
 
     args = parser.parse_args()
 
-    with open(args.file, 'r') as file:
-        content = file.read()
+    if args.file:
+        with open(args.file, 'r') as file:
+            content = file.read()
+    else:
+        content = sys.stdin.read()
 
-    if args.c:
-        print(f'Bytes: {count_bytes(content)}')
-    if args.l:
-        print(f'Lines: {count_lines(content)}')
-    if args.w:
-        print(f'Words: {count_words(content)}')
-    if args.m:
-        print(f'Characters: {count_characters(content)}')
+    results = []
+    if args.lines or (not args.bytes and not args.words and not args.chars):
+        results.append(str(count_lines(content)))
+    if args.words or (not args.bytes and not args.lines and not args.chars):
+        results.append(str(count_words(content)))
+    if args.chars or (not args.bytes and not args.lines and not args.words):
+        results.append(str(count_characters(content)))
+    if args.bytes:
+        results.append(str(count_bytes(content)))
+
+    if args.file:
+        results.append(args.file)
+
+    print(" ".join(results))
 
 if __name__ == '__main__':
     main()
